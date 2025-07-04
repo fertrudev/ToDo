@@ -13,7 +13,8 @@ origins = [
     "http://localhost:3000",
     os.getenv("FRONTEND_URL")                 
 ]
- 
+
+print(f"DEBUG: FRONTEND_URL configurada para CORS: {os.getenv('FRONTEND_URL')}")  
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 
